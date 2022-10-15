@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //累加和
+        var sum = 0;
+        for (var i = 1; i <= 100; i++) {
+            //sum =sum + i;
+            sum += i;
+        }
+        console.log('1~100之间的和:' + sum);
+
+        //平均数
+        average = sum / 100;
+        console.log('1~100之间的平均数:' + average);
+
+        //偶数even 奇数odd
+        var even = 0,
+            odd = 0;
+        for (var i = 1; i <= 100; i++) {
+            if(i % 2 == 0) {
+                even = even + i;
+            }else {
+                odd = odd + i;
+            }
+        }
+        console.log('1~100之间所有偶数的和:' + even);
+        console.log('1~100之间所有奇数的和:' + odd);
+
+        //能够被3整除的和
+        var result = 0;
+        for (var i = 1; i <= 100; i++) {
+            if(i % 3 == 0) {
+                result += i;
+            }
+        }
+        console.log('1~100之间能够被3整除的和:' + result);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
